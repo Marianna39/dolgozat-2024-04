@@ -9,7 +9,7 @@ function AppWithRoute({ routeName = '/' }) {
     <App />
   </MemoryRouter>;
 }
-
+ 
 it('van navigáció', () => {
   render(<AppWithRoute />);
   const navbar = screen.getByRole('navigation');
