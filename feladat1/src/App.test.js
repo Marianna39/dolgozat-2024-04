@@ -1,7 +1,7 @@
 import { render, screen, wait } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
- 
+  
 function typeIntoForm({ nev, pont }) {
   const nameElement = screen.getByRole('textbox', { name: "Név" })
   const scoreElement = screen.getByLabelText("Pont");

@@ -6,7 +6,9 @@ export default function Kep() {
 
         <div className='container'>
             <header>
-                <h1>Balatoni kilátók</h1>
+                <div className="row">
+                    <h1 className='col text-center'>Balatoni kilátók</h1>
+                </div>
                 <nav className='nav bg-dark justify-content-center'>
                     <Link className='nav-link link-light' to="/">Kezdőlap</Link>
                     <Link className='nav-link link-light' to="/kilatok">Kilátók</Link>

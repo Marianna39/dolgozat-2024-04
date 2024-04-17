@@ -13,29 +13,44 @@ export default function Kilato() {
 
     return (
         <div className='container'>
-            <header className='row'>
-                <h1>Balatoni kilátók</h1>
-                <nav className='nav bg-dark justify-content-center'>
-                    <Link className='nav-link link-light' to="/">Kezdőlap</Link>
-                    <Link className='nav-link link-light' to="/kilatok">Kilátók</Link>
-                    <Link className='nav-link link-light' to="/kepek">Képek</Link>
-                </nav>
-            </header>
-            <div className='table table-striped'>
-                <thead>
-                    <tr>
-                        <th>Város</th>
-                        <th>Kilátó</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {kilatok.map(kilato => (
-                        <tr key={kilato.id}>
-                            <td>{kilato.varos}</td>
-                            <td>{kilato.hely}</td>
-                        </tr>
-                    ))}
-                </tbody>
+            <div className="row">
+                <div className="col-6">
+                    <div className='row'>
+                        <div className='col'>
+                            <header>
+                                <div className="row">
+                                    <h1 className='col text-center'>Balatoni kilátók</h1>
+                                </div>
+                                <nav className='nav bg-dark justify-content-center'>
+                                    <Link className='nav-link link-light' to="/">Kezdőlap</Link>
+                                    <Link className='nav-link link-light' to="/kilatok">Kilátók</Link>
+                                    <Link className='nav-link link-light' to="/kepek">Képek</Link>
+                                </nav>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col">
+                            <div className='table table-striped'>
+                                <thead>
+                                    <tr>
+                                        <th>Város</th>
+                                        <th>Kilátó</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {kilatok.map(kilato => (
+                                        <tr key={kilato.id}>
+                                            <td>{kilato.varos}</td>
+                                            <td>{kilato.hely}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

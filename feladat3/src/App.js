@@ -30,14 +30,14 @@ function App() {
       <h1 className='cim'>Kutyák</h1>
 
       <div className='keret'>
-       
-          <img className="kep" src={kep.message} alt="kutya kép" />
-        
+
+        <img className="kep" src={kep.message} alt="kutya kép" />
+
       </div>
       <div className='gomb'>
         <button onClick={valt}>Következő</button>
       </div>
-      
+
     </div>
   )
 }
