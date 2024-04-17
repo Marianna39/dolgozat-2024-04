@@ -1,0 +1,44 @@
+@import "./colors";
+
+.body {
+    font-family: Verdana, sans-serif;
+}
+.cim {
+    color: $betu;
+    text-align: center;
+    font-size: 3rem;
+}
+button {
+    background-color: $betu;
+    padding: 10px;
+    color: $hatter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 1.5rem;
+}
+.container {
+    max-width: 550px;
+    background-color: $hatter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kep {
+    width: 90%;
+    padding: 12px;
+    background-color: $keret;
+    display: flex;
+    justify-content: center;
+}
+.gomb {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.keret {
+    display: flex;
+    justify-content: center;
+}
