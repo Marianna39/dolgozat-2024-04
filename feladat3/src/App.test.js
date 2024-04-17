@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
-
+ 
 // Replace the fetch function so that it returns a known, dummy data
 global.fetch = async function mockFetch() {
   return {
